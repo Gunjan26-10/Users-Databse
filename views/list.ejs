@@ -1,0 +1,56 @@
+<%- include("header") -%>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="nav navbar-brand" href="#"><span class="start">Click on the tasks to Perform:</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav ml-auto ">
+      <li class="nav-item">
+        <a class="nav-link" href="/details"><span class="start">Get User Details</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/update"><span class="start">Update User</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/image"><span class="start">Get User image</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/insert"><span class="start">Insert User</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/delete"><span class="start">Delete User</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+ <h1 class="top">Users DataBase</h1>
+<!-- table -->
+ <section id="data">
+   <table class="table">
+   <thead style=" background-color:#6ECB63;">
+     <tr>
+       <th scope="col">User_ID</th>
+       <th scope="col">User_Name</th>
+       <th scope="col">User_Email</th>
+       <th scope="col">User_Image</th>
+       <th scope="col">User_Orders</th>
+     </tr>
+   </thead>
+   <tbody>
+    <% newFoundUsers.forEach(function(user){ %>
+       <tr>
+         <th scope="row"><%= user._id %></th>
+         <td><%= user.name %></td>
+         <td><%= user.email %></td>
+         <td><%= user.image %></td>
+         <td><%= user.orders %></td>
+       </tr>
+<%  }) %>
+   </tbody>
+   </table>
+ </section>
+  <%- include("footer") -%>

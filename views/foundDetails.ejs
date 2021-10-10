@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+ <h1 class="top">Found user's details: </h1>
+
+ <section id="data">
+   <table class="table">
+   <thead >
+     <tr>
+       <th scope="col">User_ID</th>
+       <th scope="col">User_Name</th>
+       <th scope="col">User_Email</th>
+       <th scope="col">User_Image</th>
+        <th scope="col">User_Orders</th>
+     </tr>
+   </thead>
+   <tbody>
+       <tr>
+         <th scope="row"><%=  found._id  %></th>
+         <td><%= found.name %></td>
+         <td><%= found.email %></td>
+         <td><%= found.image %></td>
+         <td><%= found.orders %></td>
+       </tr>
+   </tbody>
+   </table>
+ </section>
+
+<%- include("footer") -%>

@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+ <h1 class="top">Enter user's ID to be updated: </h1>
+
+ <form action="/updateUser" method="post" class="insert row col-lg-4">
+   <div class="form-group">
+     <label >ID:</label>
+     <input type="text" class="form-control" name="toFindID"  placeholder="Enter user's ID">
+   </div>
+   <div class="form-group">
+     <label for="exampleInputName">New/Old Name:</label>
+     <input type="text" class="form-control" name="newName"  placeholder="Enter user's Name">
+   </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">New/Old Email address:</label>
+    <input type="email" class="form-control" name="newEmail" aria-describedby="emailHelp" placeholder="Enter user's email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputImage">New/Old Image URL:</label>
+    <input type="text" class="form-control" name="newImage" placeholder="Enter user's Image">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputImage">Total Orders:</label>
+    <input type="text" class="form-control" name="newOrder" placeholder="Enter user's Orders">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password:</label>
+    <input type="password" class="form-control" name="newPassword" placeholder="Password">
+    <button type="submit" class="btn btn-primary"  onclick="this.form.submit()">Submit</button>
+  </div>
+ </form>
+
+
+<%- include("footer") -%>

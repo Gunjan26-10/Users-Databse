@@ -1,0 +1,48 @@
+body {
+  background-color: #A2CDCD;
+  font-family: 'helvetica neue';
+}
+.navbar{
+  background-color: #C6D57E;
+}
+.start{
+  color: white;
+}
+span{
+    font-weight: 600;
+    color: burlywood;
+}
+span:hover{
+    color: black;
+}
+#data{
+  background-color: transparent;
+}
+.table{
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FBF4E9;
+}
+.top{
+     text-align: center;
+     margin: 5%;
+     font-weight: bolder;
+     margin-left: 20%;
+     margin-right: 20%;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     background-color: #FBF4E9;
+     font-family: 'helvetica neue';
+}
+.insert{
+  padding: 5%;
+  background-color: #D9CAB3;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn{
+  margin-top: 5%;
+}

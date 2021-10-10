@@ -1,0 +1,14 @@
+<%- include("header") -%>
+
+ <h1 class="top">Enter user's ID: </h1>
+
+ <form action="/userImage" method="post" class="insert row col-lg-4">
+   <div class="form-group">
+     <label >ID:</label>
+     <input type="text" class="form-control" name="findImageID"  placeholder="Enter user's ID">
+     <button type="submit" class="btn btn-primary" value="" onclick="this.form.submit()">Submit</button>
+   </div>
+ </form>
+
+
+<%- include("footer") -%>
